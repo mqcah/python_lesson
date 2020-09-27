@@ -1,0 +1,28 @@
+apple_price = 200
+# 変数moneyに数値1000を代入してください
+money = 1000
+
+input_count = input('購入するりんごの個数を入力してください：')
+count = int(input_count)
+total_price = apple_price * count
+change = money - total_price
+more_money = total_price - money
+
+print('購入するりんごの個数は' + str(count) + '個です')
+print('支払い金額は' + str(total_price) + '円です')
+
+# moneyとtotal_priceの比較結果によって条件を分岐してください
+if  money > total_price:
+	print("りんごを" + str(count) + "個買いました")
+	print("残金は" + str(change) + "円です")
+
+elif money == total_price:
+	print("りんごを" + str(count) + "個買いました")
+	print("財布が空になりました")
+
+else :
+	print(str(more_money) + "円足りません")
+	print("りんごを買えませんでした")
+	print
+
+
